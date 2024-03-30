@@ -5,6 +5,7 @@ const successMessage = document.getElementById('success-message');
 
 form.addEventListener('submit',submitEventHandler);
 
+
 function submitEventHandler (event) {
     event.preventDefault();
     if (!emailInput.value) {

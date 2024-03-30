@@ -2,15 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 0%);
     color: hsl(234, 29%, 20%);
+    max-width: 1440px; 
 }
 
 .container {
-    max-width: 1440px; 
+    max-width:50%;
+    height:30%;
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
+    display: grid;
+    background-color: hsl(0, 0%, 100%);
+    grid-template-columns: 55% 45%;
+    margin-top:5rem;
 }
 
 h1 {
@@ -52,11 +57,3 @@ input[type="email"] {
     padding-left: 20px; 
 }
 
-.circle {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(''); 
-    background-size: cover; 
-    margin-right: 10px;
-}
