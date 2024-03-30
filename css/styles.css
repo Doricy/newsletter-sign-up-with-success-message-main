@@ -1,8 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: hsl(0, 0%, 0%);
+    background-color: hsl(234, 29%, 20%);
     color: hsl(234, 29%, 20%);
     max-width: 1440px; 
 }
@@ -14,19 +19,38 @@ body {
     padding: 20px;
     display: grid;
     background-color: hsl(0, 0%, 100%);
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 45%;
+    gap: 5%;
     margin-top:5rem;
+    border-radius: 1rem;
+}
+
+.left{
+    padding-top:10%;
+    padding-bottom: 10%;
+}
+.listing{
+    display: grid;
+    grid-template-columns: 5% 90%;
+    gap:5%;
+    margin-bottom: .5rem;
 }
 
 h1 {
-    color: hsl(4, 100%, 67%); 
+    color: hsl(235, 18%, 26%); 
+    width: 100%;
+    font-weight: 700px;
+    margin-bottom: 1rem;
 }
 
+#sub-title{
+    margin-bottom: 1rem;
+}
+
+
 p {
-    font-size: 16px; 
-    line-height: 1.5;
-    margin-bottom: 20px;
-    color: hsl(231, 7%, 60%); 
+    font-size: 14px; 
+    color: hsl(234, 29%, 20%); 
 }
 
 .form-group {
@@ -50,10 +74,5 @@ input[type="email"] {
 
 .error {
     color: red;
-}
-
-.container p {
-    position: relative;
-    padding-left: 20px; 
 }
 
