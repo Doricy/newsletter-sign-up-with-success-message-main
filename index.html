@@ -26,12 +26,13 @@
     <div class="listing"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg><p>And much more!</p></div>
     <form id="signup-form">
         <div class="form-group">
-            <label for="email">Email address</label>
-            <input id="email" name="email" placeholder="email@company.com">
-            <div class="error" id="email-error"></div>
-        </div>
-        <br>
-        <button type="submit">Subscribe to monthly newsletter</button>
+          <div class="input-header">
+            <label class="email-label" for="email">Email address</label>
+            <p class="error-message"></p>
+          </div>         
+          <input class="email-input" name="email" placeholder="email@company.com"> 
+        <button class="submit-btn" type="submit">Subscribe to monthly newsletter</button>
+      </div>
     </form>
     </div>
     <div class="right">
