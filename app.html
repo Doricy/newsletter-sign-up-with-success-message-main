@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Newsletter Sign-up Project</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <p><span class="circle"></span>Product discovery and building what matters</p>
+        <p><span class="circle"></span>Measuring to ensure updates are a success</p>
+        <p><span class="circle"></span>And more!</p>
+        <br>
+        <br>
+
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="email@company.com" required>
+                <div class="error" id="email-error"></div>
+            </div>
+            <br>
+            <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+        <div class="success" id="success-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
