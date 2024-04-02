@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: hsl(234, 29%, 20%);
@@ -28,6 +31,7 @@ body {
 .left{
     padding-top:10%;
     padding-bottom: 10%;
+    padding-left: 10%;
 }
 
 h1 {
@@ -35,6 +39,7 @@ h1 {
     width: 100%;
     font-weight: 700px;
     margin-bottom: 1rem;
+    font-size: 2.5rem;
 }
 
 #sub-title{
@@ -43,9 +48,10 @@ h1 {
 
 .listing{
     display: grid;
-    grid-template-columns: 8% 90%;
-    gap:5%;
+    grid-template-columns: 7% 90%;
+    gap:3%;
     margin-bottom: .5rem;
+   
 }
 
 .form-group{
@@ -82,7 +88,7 @@ h1 {
 }
 .submit-btn{
     width: 100%;
-    height: 2.5rem;
+    height: 2.6rem;
     background-color:hsl(235, 18%, 26%);
     color:hsl(0, 0%, 100%);
     border:none;
@@ -101,8 +107,9 @@ button:hover{
 
 
 p {
-    font-size: 14px; 
+    font-size: 13px; 
     color: hsl(234, 29%, 20%); 
+
 }
 
 .form-group {
@@ -122,3 +129,46 @@ label {
     color: red;
 }
 
+@media screen and (max-width:376px){
+    body{
+        background-color: white;
+    }
+    .container {
+        margin-top: 0%;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 1%;
+        max-width:100%;
+        padding: 0%;
+        border-radius: 0%;
+    }
+
+    .right{
+        order:1;
+
+    }
+    .left{
+        order:2;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 0;
+        padding-top: 5px;
+
+        
+    }
+
+    .hero{
+       margin-top:-10px;
+       margin-left: -5px;
+       margin-right: -5px;
+    }
+    
+    .listing{
+        margin-bottom: 1.5rem;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+}
