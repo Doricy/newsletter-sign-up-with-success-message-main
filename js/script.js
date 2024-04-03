@@ -18,7 +18,7 @@ function submitEventHandler (event) {
         setErrorMessage("Valid email required",emailInput,errorText);
     } else {
         console.log(popUp)
-        successMessage.textContent = `A confirmation email has been sent to ${emailInput.value}. Please open it and click the button inside to confirm your subscription.`;
+        successMessage.textContent = emailInput.value;
         errorText.textContent = '';
         emailInput.value = '';
         popUp.style.display ='unset';
